@@ -102,7 +102,7 @@ No page-to-page links in the footer, per spec. Internal links are all relative.
 
 ### Flagged — needs confirming on the call
 
-1. **`REPLACE-WITH-LIVE-URL`** appears in every page's canonical, og:url, twitter:image and JSON-LD `url`, plus `sitemap.xml` and `robots.txt`. Must be swapped for the real URL after deployment.
+1. ~~`REPLACE-WITH-LIVE-URL`~~ — **done.** All canonical, og:url, twitter:image and JSON-LD `url` values, plus `sitemap.xml` and `robots.txt`, now point at the live URL below.
 
 2. **Google review deep link.** The proper `search.google.com/local/writereview?placeid=…` link needs their Place ID, which wasn't in any upload. Currently pointing at a Google search for the listing, which works but is less direct. Get the Place ID and swap it.
 
@@ -173,4 +173,11 @@ storyfront-dtails-aesthetics/
 └── videos/   4 mp4s
 ```
 
-Fresh public repo `storyfront-dtails-aesthetics`, push root, enable Pages on main/root. Then replace every `REPLACE-WITH-LIVE-URL` across all 8 HTML files plus `sitemap.xml` and `robots.txt`, and push that fix. Finally paste the live URL into a WhatsApp chat to yourself to confirm the OG banner card renders.
+**Deployed.**
+
+- **Repo:** https://github.com/Ignatius-Kimeu/storyfront-dtails-aesthetics (public, main/root)
+- **Live URL:** https://ignatius-kimeu.github.io/storyfront-dtails-aesthetics/
+
+Remaining manual step: paste the live URL into a WhatsApp chat to yourself and confirm the OG banner card renders as the full-width image, not a small thumbnail.
+
+If a custom domain is bought later, re-run the URL substitution across all 8 HTML files, `sitemap.xml` and `robots.txt`, and set the domain in the repo's Pages settings.
